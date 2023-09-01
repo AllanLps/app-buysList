@@ -85,3 +85,10 @@ button:hover{
     -ms-transition: 700ms;
     -o-transition: 700ms;
 }
+
+.itens {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
