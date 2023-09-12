@@ -1,0 +1,17 @@
+#item_input{
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-300);
+    border-radius: .374rem;
+
+    color: var(--gray-100);
+
+}
+
+.mudar_cor_label{
+    color: var(--purple-1);
+
+}
+
+.mudar_cor_input{
+    outline: 1px solid var(--purple-1);
+}
