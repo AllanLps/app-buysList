@@ -1,4 +1,6 @@
 @import url(item/item.css);
+@import url(containerMenu/containerMenu.css);
+@import url(quantidade/quantidade.css);
 
 
 :root {
@@ -28,6 +30,7 @@ img {
 
 h1 {
     color: var(--gray-100);
+    
 
     font-weight: 700;
     font-size: 24px;
@@ -36,28 +39,18 @@ h1 {
 
     padding: 1.5rem 0;
 
+    margin-top: 4rem;
+
 }
 
-main {
+main {    
     display: flex;
-    justify-content: center;
-
-    
-}
-
-.container_menu {
-   margin-top: 8rem;
-   position: relative;
-      
-}
-
-
-#text-itens{
-    position: relative;
-}
-.itens {
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     
+        
 }
+
+
+
+

@@ -5,6 +5,12 @@
 
     color: var(--gray-100);
 
+    padding: 0.75rem;
+    display:flex;
+    align-items: center;
+    align-self: stretch;
+    margin:.5rem 0;
+
 }
 
 .mudar_cor_label{
@@ -14,4 +20,8 @@
 
 .mudar_cor_input{
     outline: 1px solid var(--purple-1);
+}
+
+#text-itens{
+    position: relative;
 }
