@@ -26,8 +26,6 @@
     <main>
         <h1>Lista de compras</h1>
         <div class="container_menu">
-           
-
             <div id="text_itens">
                 <div>
                     <label for="item_input" id="item_label">Item</label> 
@@ -39,16 +37,23 @@
 
             <div id="quantidade_itens">
                 <div>
-                    <label for="medida_input">Quantidade</label>
+                    <label for="quantidade_input" id="quantidade_label">Quantidade</label>
                 </div>
-                <div>
-                    <input type="number" id="medida_input">
-                    <!-- <select id="medida">
-                        <option value="unidade">Un.</option>
-                        <option value="litros">L.</option>
-                        <option value="quilograma">Kg.</option>
-    
-                    </select> > Similar ao video do myke --> 
+                <div class="quantidade_box">
+                    <input type="number" id="quantidade_input">
+                    
+
+                    <div id="selecione_unidade" >
+                        <input type="checkbox" id="quantidade_input">
+                        <div id="unidade_medida">Kg.</div>
+                        <div id="chevrons">
+                            <i data-lucide="chevron-down"></i>
+                            <i data-lucide="chevron-up"></i>
+
+                        </div>
+                    </div>
+                    
+                    
                 </div>
             </div>
             
@@ -58,7 +63,10 @@
         
     </main>
 
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="assets/js/index.js"></script>
     <script src="assets/js/item.js"></script>
+    <script src="assets/js/quantidade.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@
 :root {
     --gray-100: #FBF9FE;
     --gray-300: #252529;
+    --gray-400: #17171A;
     --gray-500: #111112;
     
     --black: #0C0C0D;
@@ -40,12 +41,14 @@ h1 {
     padding: 1.5rem 0;
 
     margin-top: 4rem;
+    margin-left: -12.5rem;
 
 }
 
 main {    
     display: flex;
     flex-direction: column;
+    justify-self: unset;
     align-items: center;
     
         
