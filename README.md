@@ -1,6 +1,6 @@
 # app-buysList ✅
 <hr>
-Em contrução...🚧
+Em construção...🚧
 
 ![30%](https://progress-bar.dev/30)
 <hr>
