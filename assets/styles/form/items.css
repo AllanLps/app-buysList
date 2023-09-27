@@ -1,0 +1,22 @@
+.items{
+    margin: 0 .5rem;
+}
+
+
+
+input {
+    background-color: var(--gray-400);
+    border: 1px solid var(--gray-300);
+    border-radius: .324rem;
+
+    padding: 0.75rem;
+
+    margin-top: 0.75rem;
+
+
+}
+
+.input_focus{
+    outline: 1px solid var(--purple-light);
+}
+

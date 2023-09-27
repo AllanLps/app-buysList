@@ -1,60 +1,41 @@
-@import url(item/item.css);
-@import url(containerMenu/containerMenu.css);
-@import url(quantidade/quantidade.css);
-
+@import url("texts/texts.css");
+@import url("form/form.css");
+@import url("form/quantidade.css");
+@import url("dropdown/dropdown.css");
+@import url("form/items.css");
 
 :root {
+    /* Produto */
+    --purple-light: #A881E6;
+    --purple: #7450AC;
+    --purple-dark: #523480;
+
+    /* Base */
     --gray-100: #FBF9FE;
     --gray-200: #AFABB6;
     --gray-300: #252529;
     --gray-400: #17171A;
     --gray-500: #111112;
-    
-    --black: #0C0C0D;
+    --gray-600: #0C0C0D;
 
-    --purple-1: #A881E6;
-    --purple-2: #523480;
+    /* Feedback */
+    --success-light: #4E995E;
+    --success: #2F723D;
+
+
 
 }
 
-body {
-    background: var(--black);
+body{
+    background-color: var(--gray-600);
 
     color: var(--gray-100);
-
-    font-family: 'Inter', sans-serif;    
-}
-
-img {
-    position: absolute;
     
-}
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 130%;
 
-h1 {
-    color: var(--gray-100);
-    
-
-    font-weight: 700;
-    font-size: 24px;
-
-    position: relative;
-
-    padding: 1.5rem 0;
-
-    margin-top: 4rem;
-    margin-left: -12.5rem;
 
 }
-
-main {    
-    display: flex;
-    flex-direction: column;
-    justify-self: unset;
-    align-items: center;
-    
-        
-}
-
-
-
 

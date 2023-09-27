@@ -1,0 +1,7 @@
+.quantidade{
+    margin: 0 .5rem;
+}
+
+.input_focus-quantidade{
+    outline: 1px solid var(--purple-light);
+}

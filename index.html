@@ -1,116 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <title>App | lista de compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <title>Buy List</title>
 
     <link rel="stylesheet" href="assets/styles/reset.css">
-    <link rel="stylesheet" href="/assets/styles/styles.css">
-
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    
 </head>
-
 <body>
-
-    <header >
-        <div >
-            <img src="assets/images/banner.png" alt="imagem de um banner com várias frutas na cor roxa" width="100%"/>
-        </div>            
+    <header>
+        <img src="assets/images/banner.svg" alt="Imagem de um banner com desenhos de comidas na cor roxa" width="100%">    
+        <div class="texts">
+            <h1 title="Desenvolvido por Allan Lopes">Lista de compras</h1>
+            <p >Planeje suas compras de forma inteligente!</p>
+        </div>
     </header>
     <main>
-        <h1>Lista de compras</h1>
-        <div class="container_menu">
-            <div id="text_itens">
-                <div>
-                    <label for="item_input" id="item_label">Item</label> 
-                </div>
-                <div>
-                    <input type="text" id="item_input">
-                </div>                
+        <div class="items">
+            <label for="">Item</label>
+            <div>
+                <input type="text" id="item-input">
             </div>
-
-            <div id="quantidade_itens">
-                <div>
-                    <label for="quantidade_input" id="quantidade_label">Quantidade</label>
-                </div>
-                <div class="quantidade_box">
-                    <input type="number" id="quantidade_input">                    
-                    <input type="checkbox" id="select-button">
-
-                    <div id="selecione_unidade">
-                       
-                       <label for="select-button">UN.</label>
-                       <div id="chevrons">
-                        <i data-lucide="chevron-down"></i>
-                        <i data-lucide="chevron-up"></i>
-
-                       </div>
-                    </div>
-                    
-                    
-                    
-                    
-                </div>
-                <div>
-                        <ul id="option">
-                            <li class="options">
-                                <input 
-                                    type="radio"
-                                    name="quantidade"
-                                    value="Un"
-                                    data-label="Unidade"        
-                                >
-                                <span>Un.</span>
-                                <i data-lucide="check"></i>
-                            </li>
-    
-                            <li class="options">
-                                <input 
-                                    type="radio"
-                                    name="quantidade"
-                                    value="L"
-                                    data-label="Litros"        
-                                
-                                >
-                                <span>L</span>
-                                <i data-lucide="check"></i>
-                            </li>
-    
-                            <li class="options">
-                                <input 
-                                    type="radio"
-                                    name="quantidade"
-                                    value="Kg"
-                                    data-label="Quilos"        
-                                
-                                >
-                                <span>Kg.</span>
-                                <i data-lucide="check"></i>
-                            </li>
-                        </ul>
-                    </div>
-                
-                    
-                   
-        
-            </div>
-            
-            
         </div>
 
-        
-    </main>
+        <div class="quantidade">
+            <label for="">Quantidade</label>
+            <div>
+                <input type="text" id="quantidade-input">
+            </div>      
 
+        </div>
+
+        <div class="unidade">
+            <button class="btn" id="btn-dropdown">UN. <i class="chevron-down" data-lucide="chevron-down"></i></button>
+            <!-- <div class="dropdown" >
+               <ul class="options">
+                <li class="Option">
+                    <input type="radio">
+                    <span>Un.</span>
+                    <i data-lucide="check"></i>
+                </li>
+
+                <li class="Option">
+                    <input type="radio">
+                    <span>L</span>
+                    <i data-lucide="check"></i>
+
+                </li>
+
+                <li class="Option">
+                    <input type="radio">
+                    <span>Kg.</span>
+                    <i data-lucide="check"></i>
+
+                </li>
+               </ul>
+
+            </div> -->
+
+        </div>
+    </main>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="assets/js/index.js"></script>
-    <script src="assets/js/item.js"></script>
-    <script src="assets/js/quantidade.js"></script>
+    <script src="assets/js/btn/btn.js"></script>
+    <script src="assets/js/focusInput/focusInput.js"></script>
 </body>
-
 </html>

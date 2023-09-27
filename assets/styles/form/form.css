@@ -1,0 +1,13 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    margin: 3rem;
+
+    font-size: 14px;
+
+
+    
+}
