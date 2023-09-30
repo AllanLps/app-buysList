@@ -1,3 +1,7 @@
+.unidade{
+    margin-top: 1.75rem;
+}
+
 .btn{
     background-color: var(--gray-400);
     border: 1px solid var(--gray-300);
@@ -8,9 +12,8 @@
     color: var(--gray-100);
 
     display: flex;
-    align-items: center;
-
     padding: 0.75rem;
+    
    
 }
 
@@ -21,6 +24,45 @@
     margin-left: 1rem;
 }
 
+.chevron-up[data-lucide = "chevron-up"] {
+    display: none;
+}
+
 .mudar_btn{
    border: 1px solid var(--purple-light);
+}
+
+.mudar_btn .chevron-down {
+    display: none;
+}
+
+.mudar_btn .chevron-up[data-lucide = "chevron-up"] {
+    display: block;
+    color: var(--purple-light);
+
+    width: 15px;
+    height: 15px;
+
+    margin-left: 1rem;
+}
+
+.dropdown{
+    margin-top: .4rem;
+}
+
+.options{
+    border-radius: .375rem;
+    background-color: var(--gray-400);
+    border: 1px solid var(--gray-300)
+}
+
+.option{
+    padding: .4rem;
+
+}
+
+.check{
+    width: 15px;
+    height: 15px; 
+    
 }

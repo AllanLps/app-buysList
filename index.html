@@ -16,20 +16,21 @@
     <header>
         <img src="assets/images/banner.svg" alt="Imagem de um banner com desenhos de comidas na cor roxa" width="100%">    
         <div class="texts">
-            <h1 title="Desenvolvido por Allan Lopes">Lista de compras</h1>
+            <h1 title="corredor">Lista de compras</h1>
             <p >Planeje suas compras de forma inteligente!</p>
         </div>
     </header>
     <main>
+        
         <div class="items">
-            <label for="">Item</label>
+            <label for="item-input" id="item-label">Item</label>
             <div>
                 <input type="text" id="item-input">
             </div>
         </div>
 
         <div class="quantidade">
-            <label for="">Quantidade</label>
+            <label for="quantidade-input" id="quantidade-label">Quantidade</label>
             <div>
                 <input type="text" id="quantidade-input">
             </div>      
@@ -37,37 +38,58 @@
         </div>
 
         <div class="unidade">
-            <button class="btn" id="btn-dropdown">UN. <i class="chevron-down" data-lucide="chevron-down"></i></button>
-            <!-- <div class="dropdown" >
+          
+            <button class="btn" id="btn-dropdown">
+                UN. 
+                <i class="chevron-down" data-lucide="chevron-down" ></i>
+                <i class="chevron-up" data-lucide="chevron-up" ></i>
+            </button>
+            
+            <div class="dropdown" >
                <ul class="options">
-                <li class="Option">
-                    <input type="radio">
+                <li class="option">
+                    <input 
+                        type="radio"
+                        name="quantidade"
+                        value="unidade"
+                    >
                     <span>Un.</span>
-                    <i data-lucide="check"></i>
+                    <i data-lucide="check" class="check"></i>
                 </li>
 
-                <li class="Option">
-                    <input type="radio">
+                <li class="option">
+                    <input 
+                        type="radio"
+                        name="quantidade"
+                        value="litros"
+                    >
                     <span>L</span>
-                    <i data-lucide="check"></i>
+                    <i data-lucide="check" class="check"></i>
 
                 </li>
 
-                <li class="Option">
-                    <input type="radio">
+                <li class="option">
+                    <input 
+                        type="radio"
+                        name="quantidade"
+                        value="quilograma"
+                    >
                     <span>Kg.</span>
-                    <i data-lucide="check"></i>
+                    <i data-lucide="check" class="check"></i>
 
                 </li>
                </ul>
 
-            </div> -->
+            </div>
 
         </div>
+        
     </main>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/btn/btn.js"></script>
     <script src="assets/js/focusInput/focusInput.js"></script>
+
+
 </body>
 </html>

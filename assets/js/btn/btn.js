@@ -1,4 +1,4 @@
-let button = document.getElementById("btn-dropdown")
+const button = document.getElementById("btn-dropdown")
 
 button.addEventListener("click", function() {
     button.classList.add("mudar_btn")
